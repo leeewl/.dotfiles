@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
 # 执行wifi-menu 联网
+echo "input wifi-menu to connect to the internet\n"
 
 # 将国内仓库镜像地址提前
 sed -i  "1 i\Server = http://mirror.veriteknik.net.tr/archlinux/\$repo/os/\$arch" /etc/pacman.d/mirrorlist
@@ -60,6 +61,27 @@ sleep 3                             #同步内容花费时间较长，休眠3s�
 mke2fs -j ${partdisk}1 &>/dev/null
 mke2fs -j ${partdisk}2 &>/dev/null    #格式化分区，消息送入/dev/null
 mkswap ${partdisk}3&>/dev/null        #格式化交换分区
+
+
+## 挂载分区
+mount /dev/sda2 /mnt
+mkdir -p /mnt/boot/EFI
+mount /dev/sda1 /mnt/boot/EFI
+mkdir /mnt/home
+mount /dev/sda3 /mnt/home
+
+# 安装基础包
+pacstrap /mnt base
+
+# 生成分区表
+genfstab -U /mnt >> /mnt/etc/fstab
+
+# 使用arch-chroot进入新系统
+arch-chroot /mnt
+
+# 时区
+iln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
 
 #######
 
