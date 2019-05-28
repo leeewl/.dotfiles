@@ -80,7 +80,13 @@ genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
 
 # 时区
-iln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+# 本地化设置
+sed -i '/zh_CN.UTF-8/{s/#//}' /etc/locale.gen
+locale-gen
+echo 'LANG=zh_CN.UTF-8'  > /etc/locale.conf
+
 
 
 #######
