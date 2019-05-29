@@ -87,6 +87,9 @@ sed -i '/zh_CN.UTF-8/{s/#//}' /etc/locale.gen
 locale-gen
 echo 'LANG=zh_CN.UTF-8'  > /etc/locale.conf
 
+# 主机名
+echo "Garden" > /etc/hostname
+
 
 
 #######
