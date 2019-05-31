@@ -87,14 +87,16 @@ sed -i '/zh_CN.UTF-8/{s/#//}' /etc/locale.gen
 locale-gen
 echo 'LANG=zh_CN.UTF-8'  > /etc/locale.conf
 
-# 主机名
+# 主机名, 我的主机名是Garden
 echo "Garden" > /etc/hostname
 
+# hosts 我的hosts是Garden，根据自己的改
+echo "127.0.0.1	localhost.localdomain	localhost" >> /etc/hosts
+echo "::1		localhost.localdomain	localhost" >> /etc/hosts
+echo "127.0.1.1	Garden.localdomain	Garden" >> /etc/hosts
 
-
-#######
-
-pacman -Syyu fcitx fcitx-googlepinyin #fcitx-im
+# 安装必要软件
+pacman -S networkmanager
 
 
 #安装termite之后生成的配置文件在/etc/xdg/termite/config,目的配置文件在~/.config/termite/config
