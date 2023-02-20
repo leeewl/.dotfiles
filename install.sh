@@ -5,9 +5,14 @@ sudo pacman -Syyu networkmanager network-manager-applet networkmanager-openconne
 sudo pacman -Syyu wqy-microhei
 sudo pacman -Syyu fcitx fcitx-configtool fcitx-googlepinyin #fcitx-im
 sudo pacman -Syyu alsa-utils
-sudo pacman -Syyu termite
+#sudo pacman -Syyu termite
+# 安装终端
+sudo pacman -Syyu terminator
 # 解压.gz文件
 sudo pacman -Syyu gzip
+
+# 使用ifconfig
+sudo pacman -Syyu net-tools
 
 rm -r ~/.config/i3
 ln -s $HOME/.dotfiles/.config/i3 ~/.config/i3
@@ -42,11 +47,11 @@ ln -s $HOME/.dotfiles/home/.Xmodmap ~/.Xmodmap
 #sudo sh -c "echo 'KEYMAP=personal' >> /etc/vconsole.conf"
 
 # 安装yay
-cd /tmp
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd
+#cd /tmp
+#git clone https://aur.archlinux.org/yay.git
+#cd yay
+#makepkg -si
+#cd
 
 
 

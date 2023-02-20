@@ -9,7 +9,9 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+# Mod1 是 alt键 Mod4 是windows键
+# 默认是Mod1
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -30,8 +32,6 @@ font pango:WenQuanYi Micro Hei Mono 14
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-#bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -204,12 +204,20 @@ gaps outer -2
 #
 exec --no-startup-id compton -b
 
+# start a terminal
+# 桌面自带的
+#bindsym $mod+Return exec i3-sensible-terminal
 #bindsym $mod+Return exec urxvt -sh 40
 #bindsym $mod+Return exec terminology
 #bindsym $mod+Return exec zsh
-bindsym $mod+Return exec termite
+#bindsym $mod+Return exec termite
+#bindsym $mod+Return exec termite
+#bindsym $mod+Return exec tilda
+bindsym $mod+Return exec terminator
 
-#exec_always --no-startup-id feh --bg-scale "~/picture/wallpaper/wallpaper_cur.jpg"
+#exec_always --no-startup-id feh --bg-scale "~/.dotfiles/.config/i3/wallpaper_cur.jpg"
+#exec_always --no-startup-id feh --bg-scale ~/.dotfiles/.config/i3/wallpaper_cur.jpg
+exec_always --no-startup-id feh --bg-scale ~/.dotfiles/.config/i3/wallpaper_cur.jpeg
 #exec_always --no-startup-id feh --bg-scale ~/picture/wallpaper/wallpaper_cur.jpg
 
 bindsym Print exec shutter -f -e -o ~/picture/shot/%Y-%m-%d-%T.png
