@@ -371,7 +371,9 @@ ramp-foreground = ${colors.foreground-alt}
 
 [module/wifi]
 type = internal/network
-interface = wlp58s0
+;interface要看ifconfig的输出
+;interface = wlp58s0
+interface = wlan0
 ;click-left = nm-connection-editor
 ;interval = 2
 
