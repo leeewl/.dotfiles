@@ -30,6 +30,12 @@ ln -s $HOME/.dotfiles/home/.bash_profile ~/.bash_profile
 rm ~/.bashrc
 ln -s $HOME/.dotfiles/home/.bashrc ~/.bashrc
 
+rm ~/.zshrc
+ln -s $HOME/.dotfiles/home/.zshrc ~/.zshrc
+
+rm ~/.p10k.zsh
+ln -s $HOME/.dotfiles/home/.p10k.zsh ~/.p10k.zsh
+
 rm ~/.gitconfig
 ln -s $HOME/.dotfiles/home/.gitconfig ~/.gitconfig
 
