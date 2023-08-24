@@ -1,0 +1,48 @@
+[37m[I 2023-08-23T14:41:57.657Z main:store:plugins:electron] current pid is "3"[39m
+-------- SESSION 2023-08-23T14:41:57.622Z (23.07.180256+202307191943, linux, x64, 8167067648, XMIND LTD., vana_linux) --------
+[37m[I 2023-08-23T14:41:57.662Z usage-stats] sync data[39m
+[37m[I 2023-08-23T14:41:57.745Z auto-updater] current version is "23.7.180256"[39m
+LaunchProcess: failed to execvp:
+xdg-settings
+[3:0823/224158.247206:ERROR:bus.cc(399)] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[3:0823/224158.247321:ERROR:bus.cc(399)] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[37m[I 2023-08-23T14:41:58.328Z main:store:plugins:electron] Application will finish launching.[39m
+[37m[I 2023-08-23T14:41:58.347Z main:store:plugins:electron] Application arguments: ["/app/main/xmind"][39m
+[37m[I 2023-08-23T14:41:58.400Z main:store:plugins:electron] Application is ready.[39m
+[37m[I 2023-08-23T14:41:58.453Z main:store:plugins:open-handler] Recover: Map(1) {
+  '2009b01288fab5413eb73a316d' => [
+    {
+      source: 'new://workbook',
+      editorId: '3ddb0c03400b9278a2cc181b18',
+      title: '未命名'
+    }
+  ]
+}[39m
+[37m[I 2023-08-23T14:41:58.456Z main:store:plugins:activation-updater] Start updating subscription information periodically.[39m
+[37m[I 2023-08-23T14:41:58.456Z main:store:plugins:activation-updater] Schedule refresh timeout(60000).[39m
+[37m[I 2023-08-23T14:41:58.456Z main:store:plugins:activation-updater] Start updating per-machine license information periodically.[39m
+[37m[I 2023-08-23T14:41:58.456Z main:store:plugins:activation-updater] Schedule refresh timeout(60000).[39m
+[37m[I 2023-08-23T14:41:58.575Z main:store:plugins:electron] Device ID: 891084f0-3f0d-11ee-8e7d-bd3f57b2b092[39m
+[3:0823/224159.267403:ERROR:object_proxy.cc(623)] Failed to call method: org.freedesktop.DBus.StartServiceByName: object_path= /org/freedesktop/DBus: org.freedesktop.DBus.Error.NoReply: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+[37m[I 2023-08-23T14:42:00.999Z fonts] App Locale: en[39m
+[37m[I 2023-08-23T14:42:01.000Z fonts] start get system fonts[39m
+[37m[I 2023-08-23T14:42:01.469Z fonts] App Locale: en[39m
+[37m[I 2023-08-23T14:42:01.469Z fonts] App Locale: en[39m
+[37m[I 2023-08-23T14:43:00.190Z main:store:plugins:activation-updater] Schedule refresh timeout(null).[39m
+[37m[I 2023-08-23T14:43:00.191Z main:store:plugins:activation-updater] Schedule refresh timeout(null).[39m
+[37m[I 2023-08-23T14:43:01.247Z fonts] App Locale: en[39m
+[37m[I 2023-08-23T14:43:01.364Z fonts] Consuming 60364 ms to get system fonts[39m
+[37m[I 2023-08-23T14:43:30.761Z main:store:plugins:editors:EditorFrame] Frame f52bdcb00b29d4487160c89b26 close[39m
+[37m[I 2023-08-23T14:43:30.896Z main:store:plugins:editors:EditorFrame] Frame f52bdcb00b29d4487160c89b26 close[39m
+[37m[I 2023-08-23T14:43:30.903Z main:store:plugins:editors:EditorFrame] Frame f52bdcb00b29d4487160c89b26 webContents destroyed[39m
+[37m[I 2023-08-23T14:43:30.919Z main:store:plugins:electron] All windows closed. Quit application....[39m
+[37m[I 2023-08-23T14:43:30.920Z main:store:plugins:electron] Application is intended to quit.[39m
+[37m[I 2023-08-23T14:43:30.920Z main:store:plugins:electron] Application status is quitting:  false[39m
+[37m[I 2023-08-23T14:43:30.920Z main:store:plugins:electron] Asking all editors to close their documents...[39m
+[37m[I 2023-08-23T14:43:30.921Z main:store:plugins:electron] All documents are closed.[39m
+[37m[I 2023-08-23T14:43:30.922Z main:store:plugins:activation-updater] Stop updating per-machine license information periodically.[39m
+[37m[I 2023-08-23T14:43:30.922Z main:store:plugins:activation-updater] Stop updating subscription information periodically.[39m
+[37m[I 2023-08-23T14:43:30.925Z main:store:plugins:electron] Application is intended to quit.[39m
+[37m[I 2023-08-23T14:43:30.925Z main:store:plugins:electron] Application status is quitting:  true[39m
+[37m[I 2023-08-23T14:43:30.925Z main:store:plugins:electron] Application will quit.[39m
+[37m[I 2023-08-23T14:43:30.925Z main:store:plugins:electron] Application quitted.[39m

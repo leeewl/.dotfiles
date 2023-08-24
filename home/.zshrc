@@ -29,3 +29,20 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 export PATH=~/.local/bin:$PATH
 
 alias ls='ls --color=auto'
+alias obsidian='nohup ~/bin/Obsidian-1.1.9.AppImage & >/dev/null'
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/leeewl/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/leeewl/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/leeewl/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/leeewl/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
