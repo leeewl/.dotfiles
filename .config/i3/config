@@ -221,8 +221,8 @@ exec_always --no-startup-id feh --bg-scale ~/.dotfiles/.config/i3/wallpaper_cur.
 #exec_always --no-startup-id feh --bg-scale ~/picture/wallpaper/wallpaper_cur.jpg
 
 bindsym Print exec shutter -f -e -o ~/picture/shot/%Y-%m-%d-%T.png
-
 bindsym $mod+Print exec shutter -s -e -o ~/picture/shot/%Y-%m-%d-%T.png
+bindsym Ctrl+Shift+Print exec flameshot gui
 
 exec --no-startup-id xset s 0
 
